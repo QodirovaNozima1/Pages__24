@@ -1,0 +1,26 @@
+.client{
+    background: $bg-py;
+    padding-top: 140px;
+    padding-bottom: 141px;
+    &__desc{
+        padding-bottom: 64px;
+        p{
+            font-size: 48px;
+            color: white;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+    }
+    &__logo{
+        display: flex;
+        gap: 65px;
+        @media (max-width:1140px){
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            align-items: center;
+            margin: 20px;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.start{
+    background: $bg-end;
+    padding-bottom: 72px;
+    padding-top: 72px;
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        @media  (max-width:600px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            text-align: center;
+        }
+    }
+    &__ques{
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 48px;
+        color: $bg-py;
+    }
+    &__btn{
+        display: flex;
+        align-items: center;
+        button{
+        width: 200px;
+        height: 60px;
+        font-size: 20px;
+        background: transparent;
+        border:3px solid $bg-py;
+        color: $bg-py;
+        border-radius: 30px;
+        transition: .3s;
+        &:hover{
+            background: $bg-py;
+            color: $bg-end;
+        }
+        }
+    }
+}

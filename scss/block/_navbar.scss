@@ -1,0 +1,133 @@
+.header{
+    background:$bg-py;
+    padding-top: 50px;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    gap: 557px;
+    &__logo{
+        display: flex;
+        gap: 80px;
+    }
+    &__collection{
+        display: flex;
+        align-items: center;
+        ul{
+        display: flex;
+        gap: 40px;
+        }
+        li{
+            font-family: sans-serif;
+            color: white;
+            font-weight: 200;
+        }
+        
+    }
+    .menu__btn{
+        display: none;
+    }
+    .sidebar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        z-index: 999;
+        background: rgba(1, 77, 86, 0.384);
+        backdrop-filter: blur(10px);
+        box-shadow: -0px 0 10px rgba(1, 78, 86, 1);
+        display: none;
+        flex-direction: column;
+        gap: 40px;
+        padding-left: 30px;
+        padding-top: 40px;
+        transition: .24s;
+        ul{
+        display: flex;
+        gap: 40px;
+        }
+        li{
+            color: white;
+            font-weight: 200;
+            &:hover{
+                cursor: pointer;
+                transform:scale(1.1);
+            }
+        }
+        
+        i{
+            font-size: 24px;
+            color: white;
+        }
+    }
+    .sidebar__btn{
+        button{
+        width: 153px;
+        height: 48px;
+        background:white;
+        border:1px solid white;
+        color:$bg-py;
+        border-radius: 30px;
+        transition: .3s;
+        &:hover{
+            background:$bg-py;
+            color:white;
+        }
+        }
+    }
+    &__btn{
+        display: flex;
+        align-items: center;
+        button{
+        width: 153px;
+        height: 48px;
+        background: transparent;
+        border:1px solid white;
+        color: white;
+        border-radius: 30px;
+        transition: .3s;
+        &:hover{
+            background: white;
+            color: $bg-py;
+        }
+        }
+    }
+
+}
+
+@media (max-width:1100px){
+    .navbar{
+        gap: 300px;
+    padding-left: 60px;
+    }
+}
+@media (max-width:990px){
+    .navbar{
+        gap: 100px;
+    padding-left: 40px;
+    }
+}
+@media (max-width:800px){
+    .navbar{
+    gap: 100px;
+    padding-left: 20px;
+    }
+}
+@media (max-width:700px){
+    .navbar{
+        padding-right: 20px;
+        &__collection{
+            display: none;
+        }
+        &__btn{
+            display: none;
+        }
+        .menu__btn{
+            display: block;
+            color: white;
+            font-size: 28px;
+        }
+    }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>contact</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar__logo">
+                    <img src="./assets/myteam-logo.png" alt="">
+                    <ul class="sidebar">
+                        <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-delete-left fa-shake"></i></a></li>
+                        <li class="navbar__item"><a href="#">Home</a></li>
+                        <li class="navbar__item" ><a href="#">About</a></li>
+                        <div class="sidebar__btn">
+                            <button>contact us</button>
+                        </div>
+                    </ul>
+                    <div class="navbar__collection">
+                        <ul>
+                            <li class="navbar__item"><a href="#">home</a></li>
+                            <li class="navbar__item" ><a href="./about.html">about</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar__btn">
+                    <button><a href="./contact.html">contact us</a></button>
+                </div>
+                <li  class="menu__btn" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars fa-flip"></i></a></li>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="conversation">
+            <div class="container">
+                <div class="conversation__box">
+                    <div class="conversation__desc">
+                        <p class="no__active">Contact</p>
+                        <p class="active">Ask us about</p>
+                        <div class="conversation__wrapper">
+                            <div class="conversation__card">
+                                <img src="./assets/Group 11 (1).svg" alt="">
+                                <div class="conversation__content">
+                                <p class="conversation__info">The quality of our talent network</p>
+                                </div>
+                            </div>
+                            <div class="conversation__card">
+                                <img src="./assets/Group 12.svg" alt="">
+                                <div class="conversation__content">
+                                <p class="conversation__info">Usage & implementation of our software</p>
+                                </div>
+                            </div>
+                            <div class="conversation__card">
+                                <img src="./assets/Group 13.svg" alt="">
+                                <div class="conversation__content">
+                                <p class="conversation__info">How we help drive innovation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conversation__regist">
+                        <form action="">
+                            <input required placeholder="name" type="text">
+                            <input required placeholder="Email Adrress" type="text">
+                            <input required placeholder="Company name" type="text">
+                            <input required placeholder="Title" type="text">
+                            <input style="padding-bottom: 50px;" required placeholder="Mesage" type="text">
+                            <button>Sumbit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__box">
+                <div class="footer__wrapper">
+                    <div class="footer__logo">
+                        <p class="footer__team">myteam</p>
+                        <div class="footer__page">
+                            <p>home</p>
+                        <p>about</p>
+                        </div>
+                    </div>
+                    <div class="footer__collection">
+                        <ul>
+                            <li>987  Hillcrest Lane</li>
+                            <li>Irvine, CA</li>
+                            <li>California 92714</li>
+                            <li>Call Us : 949-833-7432</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__end">
+                    <div class="footer__icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="footer__author">
+                        <p>Copyright 2020. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>

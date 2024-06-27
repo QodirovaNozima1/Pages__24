@@ -1,0 +1,106 @@
+.team{
+    background: $bg-sy;
+    padding-top: 148px;
+    padding-bottom: 100px;
+    @media (max-width:1100px){
+        padding-top: 80px;
+    }
+    &__wrapper{
+        display: flex;
+        @media (max-width:1091px){
+            display: flex;
+        flex-direction: column;
+        }
+    }
+    &__desc{
+        width: 50%;
+        color: white;
+        @media (max-width:1091px){
+            width: 100%;
+            font-size: 24px;
+        }
+        p{
+            font-size: 48px;
+            font-weight: 700;
+        }
+    }
+    &__icon{
+        font-size: 16px;
+        font-weight: 700;
+        padding-bottom: 54px;
+        &::before{
+            content: " ";
+            display:flex;
+            position: absolute;
+            width: 50px;
+            height: 4px;
+            background: $bg-end;
+        }
+    }
+    &__box{
+        width: 50%;
+        padding-top: 55px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        @media (max-width:1091px){
+            width: 100%;
+        }
+
+    }
+    &__card{
+        display: flex;
+        gap: 23px;
+        transition: .3s;
+        padding: 10px;
+        &:hover{
+            transform:scale(0.9);
+            border: 1px solid rgba(122, 122, 122, 0.612);
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        @media (max-width:700px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            img{
+                width: 100px;
+            }
+        }
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        @media (max-width:700px){
+            font-size: 32px;
+            line-height: 28px;
+        }
+        @media (max-width:1091px){
+            font-size: 59px;
+        }
+    }
+    &__title{
+        font-size: 18px;
+        color: $bg-end;
+        @media (max-width:1091px){
+            font-size: 20px;
+        }
+        @media (max-width:700px){
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+    &__info{
+        color: rgba(255, 255, 255, 0.789);
+        font-size: 15px;
+        @media (max-width:1091px){
+            font-size: 20px;
+        }
+        @media (max-width:700px){
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+}

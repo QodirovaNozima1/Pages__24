@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:livic;
+}
+
+.container{
+    max-width:1110px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+body{
+    max-width: 400vh;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}

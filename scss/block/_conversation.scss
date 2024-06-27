@@ -1,0 +1,144 @@
+.conversation{
+    background: $bg-py;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    &__box{
+        display: flex;
+        @media (max-width:990px){
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__desc{
+        width: 50%;
+        @media (max-width:990px){
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .no__active{
+        color: white;
+            font-size: 64px;
+            padding-bottom: 30px;
+    }
+    .active{
+        color: $bg-end;
+        font-size: 32px;
+        padding-bottom: 10px;
+    }
+    &__wrapper{
+        width: 50%;
+        padding-top: 55px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        @media (max-width:1091px){
+            width: 100%;
+        }
+        @media(max-width:990px){
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 30px;
+            padding-top: 30px;
+        }
+
+    }
+    &__card{
+        display: flex;
+        gap: 23px;
+        transition: .3s;
+        padding: 10px;
+        // &:hover{
+        //     transform:scale(0.9);
+        //     border: 1px solid rgba(122, 122, 122, 0.612);
+        //     border-radius: 30px;
+        //     cursor: pointer;
+        // }
+        @media (max-width:700px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            img{
+                width: 100px;
+            }
+        }
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        gap: 16px;
+        @media (max-width:700px){
+            font-size: 32px;
+            line-height: 28px;
+        }
+        @media (max-width:1091px){
+            font-size: 59px;
+        }
+    }
+    &__info{
+        color: rgba(255, 255, 255, 0.789);
+        font-size: 15px;
+        @media (max-width:1091px){
+            font-size: 20px;
+        }
+        @media (max-width:700px){
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+    &__regist{
+        width: 50%;
+        @media(max-width: 990px){
+            width: 100%;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        input {
+            padding-left: 8px;
+            padding-bottom: 20px;
+            padding-top: 5px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            outline: none;
+            background: transparent;
+            color:rgba(255, 255, 255, 0.747);
+        }
+
+        button {
+            padding: 9px 32px 11px 32px;
+            border: 2px solid #ffffff;
+            border-radius: 110px;
+            cursor: pointer;
+            width: 130px;
+            margin-top: 60px;
+            height: 48px;
+            transition: .3s;
+            color: $bg-py;
+            @media(max-width:990px){
+                width: 200px;
+                height: 50px;
+            }
+            &:hover {
+                background:transparent;
+                color:white;
+            }
+        }
+
+    }
+}
